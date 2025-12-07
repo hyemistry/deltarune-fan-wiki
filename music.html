@@ -1,0 +1,470 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Deltarune Fan Wiki</title>
+    <style>
+        body{
+            font-family: 'Determination';
+            font-size: 20px;
+            background-image: url(misc/Castle_Town_location.webp);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        header h1{
+            font-family: 'Deltarune';
+            font-size: 100px;
+            margin-top: 300px;
+            color: black;
+        }
+
+        header h2{
+            font-family: 'Determination';
+            color: black;
+            margin-top: -40px;
+            font-size: 35px;
+        }
+
+        header .container{
+            padding-top: 50px;
+        }
+
+        @media screen and (min-width: 961px) and (max-width: 1400px){
+
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 960px){
+
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 700px){
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 18px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                height: 15px !important;
+                width: 15px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 15px 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 13px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                display: inline-block;
+                height: 10px !important;
+                width: 10px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 10px 10px !important;
+            }
+        }
+
+        nav{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            /* background-image: linear-gradient(to right, #6a7bc4, #4dcc8e, #9f18cf); */
+        }
+
+        nav a img{
+            width: 175px;
+            margin-top: 17px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        nav ul li a{
+            font-size: 17px;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a .tooltip{
+            font-size: 15px;
+            z-index: 10000;
+        }
+
+        nav ul li a img{
+            width: 25px;
+            margin: 0 auto;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a:hover{
+            color: red;
+            text-shadow: 0 0 7px white, 0 0 10px black, 0 0 20px black;
+        }
+
+        nav .sidenav{
+            background-image: linear-gradient(to bottom, white, #00ffff);
+        }
+
+        div .container h2{
+            font-size: 100px;
+        }
+
+        body::selection{
+            background-color: red;
+            color: yellow;
+        }
+
+        footer{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            bottom: 0;
+        }
+
+        .container .row .col.s6 .card{
+            box-shadow: 0 0 10px white;
+        }
+
+        a span{
+            transition: all 0.3s ease;
+        }
+
+        a span:hover{
+            color: yellow !important;
+        }
+        
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active{
+            background: transparent;
+            color: yellow !important;
+        }
+
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-right: 8px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px
+        }
+
+        .tabs.transparent .indicator{
+            background-color: white;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover{
+            color: yellow !important;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover::before{
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 18px 18px
+        }
+
+        a span:hover::before{
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 21px 21px
+        }
+
+        ol li a{
+            transition: all 0.3s ease;
+            color: white !important
+        }
+
+        ol li a:hover{
+            color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo"><img src="misc/IMAGE_LOGO_0.png" alt="deltarune logo"></a>
+    
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="more.html">More</a></li>
+                    <li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/" class="tooltipped" data-position="bottom" data-tooltip="BUY NOW for a [Specil] DEAL OF [[20 KROMER]]"><img src="misc/Undertale_red_soul.svg.png" alt="SOUL."></a></li>
+                </ul>
+                </div>
+                
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#"><img src="misc/Undertale_red_soul.svg.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 60px;">
+        <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding-top: 20px; padding-bottom: 20px;">
+            <p style="font-size: 50px; margin: 0; padding-left: 20px; text-align: center; color: yellow;"><img src="misc/Undertale_red_soul.svg.png" style="width: 35px" alt=""> MUSIC</p>
+        </div>
+    </div>
+
+    <div class="center-align scrollSpy" style="margin: 50px;" id="main">
+        <img src="misc/SAVE_Point_overworld.webp" alt="">
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s6">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Chapter 1</div>
+                    <ol style="font-size: 20px; place-items: center;">
+                        <li><a href="https://open.spotify.com/track/63K6koyn1kUIXj4soQ9wNl?si=2590248a948f401f">ANOTHER HIM</a></li>
+                        <li><a href="https://open.spotify.com/track/5NiD264RGry4WmWRRAZ0uN?si=fa3a7ff00c0547a3">Beginning</a></li>
+                        <li><a href="https://open.spotify.com/track/1xIYcuzRrYEfMkh7CjSKoF?si=8ec0efec1a204e9f">School</a></li>
+                        <li><a href="https://open.spotify.com/track/72tN7vUHvkke6lUwCb2lDy?si=1ec0cd61c3734345">Susie</a></li>
+                        <li><a href="https://open.spotify.com/track/0r1IrLoXomZ3JFSd4Khp1h?si=2bcbe17d866b4a63">The Door</a></li>
+                        <li><a href="https://open.spotify.com/track/5PiPRr9KGpqWW12Kwq3FsV?si=94fedc783db64909">Cliffs</a></li>
+                        <li><a href="https://open.spotify.com/track/1PnxSUmMmpIDWWBhMEY56C?si=6d14b0cd3707491f">The Chase</a></li>
+                        <li><a href="https://open.spotify.com/track/1ZA8wuVp91YbS1uif1hyYR?si=b3723a3d1b7a45b7">The Legend</a></li>
+                        <li><a href="https://open.spotify.com/track/2uE9ZTSf2wJINqCHOrV6a0?si=5ce11e875ae04da0">Lancer</a></li>
+                        <li><a href="https://open.spotify.com/track/322mgWaD4DetiHmoDVlwWc?si=d6e1efe26fe94a30">Rude Buster</a></li>
+                        <li><a href="https://open.spotify.com/track/6Z9eoMfegGE6pQc9Toawnd?si=49dee663c4624684">Empty Town</a></li>
+                        <li><a href="https://open.spotify.com/track/3XFaNF6EbDJdSr3InmAxJO?si=57bd0ff1a30b462c">Weird Birds</a></li>
+                        <li><a href="https://open.spotify.com/track/2W90IO8eRnFg1qsPunKm9B?si=12a2536049434fbb">Field of Hopes and Dreams</a></li>
+                        <li><a href="https://open.spotify.com/track/1r3DdJ79HTJ2V62OipRyoC?si=862f0115e745435a">Fanfare (from 'Rose of Winter')</a></li>
+                        <li><a href="https://open.spotify.com/track/0fBXFpNA9Movn5G2WHPgbM?si=f4c9329532dc4dde">Lantern</a></li>
+                        <li><a href="https://open.spotify.com/track/6actYECaeFH1vOyOUCvTT9?si=361cb312f1704876">I'm Very Bad</a></li>
+                        <li><a href="https://open.spotify.com/track/6p3ckEGHB7tIiBmHLWZlVf?si=9081a875737f4c1f">Checker Dance</a></li>
+                        <li><a href="https://open.spotify.com/track/6jNxEc8nmpFBj3Pje7BVbx?si=86d6c03f626243c4">Quiet Autumn</a></li>
+                        <li><a href="https://open.spotify.com/track/4zLEqCe2KCWBJLKN3RyWAG?si=2681d378838d48d8">Scarlet Forest</a></li>
+                        <li><a href="https://open.spotify.com/track/2gafFAtDIGgDQLiEpRokIx?si=a29305ef754e40e9">Thrash Machine</a></li>
+                        <li><a href="https://open.spotify.com/track/2LsYIw2gn24nkzgwA2g4gw?si=8bb86db47207426f">Vs. Lancer</a></li>
+                        <li><a href="https://open.spotify.com/track/1XfSpjUBuZwrNUDV8AbYpZ?si=b48b4be31ac44a72">Basement</a></li>
+                        <li><a href="https://open.spotify.com/track/1aSimBo97eJ6bHr5vrpoKd?si=40341f06c1434282">Imminent Death</a></li>
+                        <li><a href="https://open.spotify.com/track/5ydKiJ69LWOzfSya9ojhE4?si=137a6d617c9e4e26">Vs. Susie</a></li>
+                        <li><a href="https://open.spotify.com/track/6JuC5mhOzqPt8lEGfQJQ05?si=6abf73d941994516">Card Castle</a></li>
+                        <li><a href="https://open.spotify.com/track/6cQuiiADGJDs4H7SfIJdYF?si=641857327eb4430f">Rouxls Kaard</a></li>
+                        <li><a href="https://open.spotify.com/track/0HuvIX3Jul87KRTOGpGr9P?si=0a563ace221946f8">April 2012</a></li>
+                        <li><a href="https://open.spotify.com/track/2ASkgao4Nv7FtY9AjASDNQ?si=33209d3ad3264418">Hip Shop</a></li>
+                        <li><a href="https://open.spotify.com/track/5zDC9xOmwH1yb7KttqbaDH?si=04051e6d398c4a64">Gallery</a></li>
+                        <li><a href="https://open.spotify.com/track/5zDC9xOmwH1yb7KttqbaDH?si=6284c04f0ed04b1f">Chaos King</a></li>
+                        <li><a href="https://open.spotify.com/track/1eodgnlUYiH3s0q99vk18p?si=ec0984f812a64f10">Darkness Falls</a></li>
+                        <li><a href="https://open.spotify.com/track/1N2FBAFlTdHDCRUXq0XHPf?si=9e4a14e4f5324858">The Circus</a></li>
+                        <li><a href="https://open.spotify.com/track/5QBozbgRWIYDSriHCRTsXd?si=e5519e9b0a724152">THE WORLD REVOLVING</a></li>
+                        <li><a href="https://open.spotify.com/track/2R6MB4GkUVnRwLN5VXHiDF?si=016d0b2e59064da2">Friendship</a></li>
+                        <li><a href="https://open.spotify.com/track/2DORTEXJd9o5Gdhr57M5yC?si=65e849eb4cec444e">THE HOLY</a></li>
+                        <li><a href="https://open.spotify.com/track/4eLHWCv6pLrxvpKomdGx5w?si=bf34db0f3a294865">Your Power</a></li>
+                        <li><a href="https://open.spotify.com/track/1He6isaU9SoB6GzIM2lx6Z?si=ae7148ed088e4acc">A Town Called Hometown</a></li>
+                        <li><a href="https://open.spotify.com/track/1pZrOGjhNld3S2QHdEt87N?si=556f13d2d1f3465a">You Can Always Come Home</a></li>
+                        <li><a href="https://open.spotify.com/track/7y6NbGuLZuNW0lVaPnYx22?si=3528cf40623f4e6e">Don't Forget</a></li>
+                        <li><a href="https://open.spotify.com/track/4AwX5ALZ1RxU9x29ispTyS?si=184cbe6cebbc4736">Before the Story</a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+
+        <div class="col s6">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Chapter 1</div>
+                    <ol style="font-size: 20px; place-items: center;">
+                        <li><a href="https://open.spotify.com/track/63K6koyn1kUIXj4soQ9wNl?si=2590248a948f401f">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER  HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                    </ol>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s6">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Chapter 1</div>
+                    <ol style="font-size: 20px; place-items: center;">
+                        <li><a href="https://open.spotify.com/track/63K6koyn1kUIXj4soQ9wNl?si=2590248a948f401f">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER  HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+
+        <div class="col s6">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Chapter 1</div>
+                    <ol style="font-size: 20px; place-items: center;">
+                        <li><a href="https://open.spotify.com/track/63K6koyn1kUIXj4soQ9wNl?si=2590248a948f401f">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER  HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                        <li><a href="#">ANOTHER HIM</a></li>
+                    </ol>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+    <footer style="margin-top: 50px;">
+        <div class="footer-copyright center-align">
+            <img style="margin: 10px;" src="misc/Annoying_Dog_overworld.webp" alt="dog">
+            <div class="center-align black-text">DELTARUNE &copy; Toby Fox 2018-2025. All Rights Reserved.</div>
+        </div>
+    </footer>
+            
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
+            $('materialboxed').materialbox();
+        })
+    </script>
+</body>
+</html>

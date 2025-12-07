@@ -1,0 +1,510 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Deltarune Fan Wiki</title>
+    <style>
+        body{
+            font-family: 'Determination';
+            font-size: 20px;
+            background-image: url(misc/Castle_Town_location.webp);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        header h1{
+            font-family: 'Deltarune';
+            font-size: 100px;
+            margin-top: 300px;
+            color: black;
+        }
+
+        header h2{
+            font-family: 'Determination';
+            color: black;
+            margin-top: -40px;
+            font-size: 35px;
+        }
+
+        header .container{
+            padding-top: 50px;
+        }
+
+        @media screen and (min-width: 961px) and (max-width: 1400px){
+
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 960px){
+
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 700px){
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 18px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                height: 15px !important;
+                width: 15px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 15px 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 13px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                display: inline-block;
+                height: 10px !important;
+                width: 10px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 10px 10px !important;
+            }
+        }
+
+        nav{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            /* background-image: linear-gradient(to right, #6a7bc4, #4dcc8e, #9f18cf); */
+        }
+
+        nav a img{
+            width: 175px;
+            margin-top: 17px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        nav ul li a{
+            font-size: 17px;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a .tooltip{
+            font-size: 15px;
+            z-index: 10000;
+        }
+
+        nav ul li a img{
+            width: 25px;
+            margin: 0 auto;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a:hover{
+            color: red;
+            text-shadow: 0 0 7px white, 0 0 10px black, 0 0 20px black;
+        }
+
+        nav .sidenav{
+            background-image: linear-gradient(to bottom, white, #00ffff);
+        }
+
+        div .container h2{
+            font-size: 100px;
+        }
+
+        body::selection{
+            background-color: red;
+            color: yellow;
+        }
+
+        footer{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            bottom: 0;
+        }
+
+        .container .row .col.s8.push-s2 .card{
+            box-shadow: 0 0 10px white;
+        }
+
+        a span{
+            transition: all 0.3s ease;
+        }
+
+        a span:hover{
+            color: yellow !important;
+        }
+        
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active{
+            background: transparent;
+            color: yellow !important;
+        }
+
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-right: 8px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px
+        }
+
+        .tabs.transparent .indicator{
+            background-color: white;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover{
+            color: yellow !important;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover::before{
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 18px 18px
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo"><img src="misc/IMAGE_LOGO_0.png" alt="deltarune logo"></a>
+    
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="more.html">More</a></li>
+                    <li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/" class="tooltipped" data-position="bottom" data-tooltip="BUY NOW for a [Specil] DEAL OF [[20 KROMER]]"><img src="misc/Undertale_red_soul.svg.png" alt="SOUL."></a></li>
+                </ul>
+                </div>
+                
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#"><img src="misc/Undertale_red_soul.svg.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 60px;">
+        <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding-top: 20px; padding-bottom: 0px;">
+            <p style="font-size: 50px; margin: 0; padding-left: 20px; text-align: center; color: yellow;"><img src="misc/Undertale_red_soul.svg.png" style="width: 35px" alt=""> THE CAST</p>
+            <div class="row center">
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#main">Main</a></p>
+                </div>
+
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#npcs">NPCs</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-align scrollSpy" style="margin: 50px;" id="main">
+        <img src="misc/SAVE_Point_overworld.webp" alt="">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s8 push-s2">
+                <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, #004fdf);">
+                    <div class="card-content">
+                        <div class="card-title white-text center" style="font-size: 35px;">Kris</div>
+                        <ul class="tabs transparent">
+                            <li class="tab col s6">
+                                <a href="#krisde" class="active cyan-text text-lighten-2"><span style="font-size: 20px;">Default</span></a>
+                            </li>
+            
+                            <li class="tab col s6">
+                                <a href="#krisda" class="active cyan-text text-lighten-2"><span style="font-size: 20px;">Dark World</span></a>
+                            </li>
+                        </ul>
+
+                        <div id="krisde" class="col s12 center " style="align-items: center;">
+                            <img style="margin-top: 10px;" src="sprite/krisdef.webp" alt="">
+                        </div>
+
+                        <div id="krisda" class="col s12 center">
+                            <img style="max-width: 150px; margin-top: 10px;" src="sprite/krisdar.webp" alt="">
+                        </div>
+
+                        <p class="white-text" style="padding-top: 325px;">Kris Dreemurr is the main protagonist of DELTARUNE. Being the only human living in Hometown, they were adopted by Toriel and Asgore Dreemurr. They are also Asriel's sibling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s8 push-s2">
+                <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, #6F2C91);">
+                    <div class="card-content">
+                        <div class="card-title white-text center" style="font-size: 35px;">Susie</div>
+                        <ul class="tabs transparent">
+                            <li class="tab col s6">
+                                <a href="#susiede" class="active purple-text text-lighten-2"><span style="font-size: 20px;">Default</span></a>
+                            </li>
+            
+                            <li class="tab col s6">
+                                <a href="#susieda" class="active purple-text text-lighten-2"><span style="font-size: 20px;">Dark World</span></a>
+                            </li>
+                        </ul>
+
+                        <div id="susiede" class="col s12 center " style="align-items: center;">
+                            <img width="175px" style="margin-top: 10px;" src="sprite/Susie_overworld_eyes.webp" alt="">
+                        </div>
+
+                        <div id="susieda" class="col s12 center">
+                            <img width="183px" style="margin-top: 10px;" src="sprite/Susie_overworld_dark_world_eyes.webp" alt="">
+                        </div>
+
+                        <p class="white-text" style="padding-top: 325px;">Susie is a monster and is one of the main protagonists of DELTARUNE. She is a widely known school bully who ended up pairing with Kris on their school project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s8 push-s2">
+                <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, green);">
+                    <div class="card-content">
+                        <div class="card-title white-text center" style="font-size: 35px;">Ralsei</div>
+                        <ul class="tabs transparent">
+                            <li class="tab col s6">
+                                <a href="#ralseide" class="active pink-text text-lighten-3"><span style="font-size: 20px;">Default</span></a>
+                            </li>
+            
+                            <li class="tab col s6">
+                                <a href="#ralseida" class="active pink-text text-lighten-3"><span style="font-size: 20px;">With Hat</span></a>
+                            </li>
+                        </ul>
+
+                        <div id="ralseide" class="col s12 center " style="align-items: center;">
+                            <img width="150px" style="margin-top: 10px;" src="sprite/Ralsei_overworld_hatless (1).webp" alt="">
+                        </div>
+
+                        <div id="ralseida" class="col s12 center">
+                            <img width="200px" style="max-width: 150px; margin-top: 10px;" src="sprite/Ralsei_overworld.webp" alt="">
+                        </div>
+
+                        <p class="white-text" style="padding-top: 325px;">Ralsei is the Prince of Darkness and is one of the main protagonists of DELTARUNE who initially had no subjects until Kris and Susie arrived. He is the healer of the team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s8 push-s2">
+                <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, #ffce32);">
+                    <div class="card-content">
+                        <div class="card-title white-text center" style="font-size: 35px;">Noelle</div>
+                        <ul class="tabs transparent">
+                            <li class="tab col s6">
+                                <a href="#noellede" class="active yellow-text text-lighten-1"><span style="font-size: 20px;">Default</span></a>
+                            </li>
+            
+                            <li class="tab col s6">
+                                <a href="#noelleda" class="active yellow-text text-lighten-1"><span style="font-size: 20px;">Dark World</span></a>
+                            </li>
+                        </ul>
+
+                        <div id="noellede" class="col s12 center " style="align-items: center;">
+                            <img width="150px" style="margin-top: 10px;" src="sprite/Noelle_Holiday_overworld.webp" alt="">
+                        </div>
+
+                        <div id="noelleda" class="col s12 center">
+                            <img width="175px" style="max-width: 150px; margin-top: 10px;" src="sprite/Noelle_overworld_Dark_World.webp" alt="">
+                        </div>
+
+                        <p class="black-text" style="padding-top: 325px;">Noelle Holiday is a deer monster and is one of the main protagonists of DELTARUNE. She is a classmate of both Kris and Susie, and is the daughter of the town mayor, Carol Holiday. <br><br>She later joined the party in Chapter 2 when she and Berdly accidentally stumbled upon a Dark World. However, if the player takes the weird route in Chapter 2, something happens to her.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="center-align scrollSpy" style="margin: 50px;" id="npcs">
+    <img src="misc/SAVE_Point_overworld.webp" alt="">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s8 push-s2">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Berdly</div>
+                    <ul class="tabs transparent">
+                        <li class="tab col s6">
+                            <a href="#berdle" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Default</span></a>
+                        </li>
+        
+                        <li class="tab col s6">
+                            <a href="#berdla" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Dark World</span></a>
+                        </li>
+                    </ul>
+
+                    <div id="berdle" class="col s12 center" style="align-items: center;">
+                        <img width="150px" style="margin-top: 10px;" src="sprite/Berdly_overworld.webp" alt="">
+                    </div>
+
+                    <div id="berdla" class="col s12 center">
+                        <img width="175px" style="margin-top: 10px;" src="sprite/Berdly_overworld_static_Dark_World.webp" alt="">
+                    </div>
+
+                    <p class="white-text" style="padding-top: 325px;">Berdly is a monster and is a student. He is the top student in school and is Noelle's project partner at school. <br><br>He later joined as a boss fight in Chapter 2 after stumbling upon a Dark World.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s8 push-s2">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Lancer</div>
+                    <ul class="tabs transparent">
+                        <li class="tab col s6">
+                            <a href="#lancerde" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Default</span></a>
+                        </li>
+        
+                        <li class="tab col s6">
+                            <a href="#lancerda" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Chad</span></a>
+                        </li>
+                    </ul>
+
+                    <div id="lancerde" class="col s12 center" style="align-items: center;">
+                        <img width="175px" style="margin-top: 10px; width: 300px;" src="sprite/Lancer_overworld_static.webp" alt="">
+                    </div>
+
+                    <div id="lancerda" class="col s12 center">
+                        <img width="175px" style="width: 225px; margin-top: 10px;" src="sprite/Lancer_face_joining.webp" alt="">
+                    </div>
+
+                    <p class="white-text" style="padding-top: 325px;">Lancer is a Darkner and is the Prince of the Card Kingdom in Chapter 1. He is a recurring character all throughout the chapters.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s8 push-s2">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Rouxls Kaard</div>
+                    <ul class="tabs transparent">
+                        <li class="tab col s6">
+                            <a href="#rouxlsde" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Default</span></a>
+                        </li>
+        
+                        <li class="tab col s6">
+                            <a href="#rouxlsda" class="active blue-text text-lighten-1"><span style="font-size: 20px;">With Hat</span></a>
+                        </li>
+                    </ul>
+
+                    <div id="rouxlsde" class="col s12 center" style="align-items: center;">
+                        <img width="250px" style="margin-top: 10px;" src="sprite/Rouxls_Kaard_overworld.webp" alt="">
+                    </div>
+
+                    <div id="rouxlsda" class="col s12 center">
+                        <img width="220px" style="margin-top: 10px;" src="sprite/Rouxls_Kaard_overworld_pirate.webp" alt="">
+                    </div>
+
+                    <p class="white-text" style="padding-top: 325px;">Rouxls Kaard is a Darkner and is a recurring character all throughout the chapters. He is Lancer's "lesser dad".<p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s8 push-s2">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title white-text center" style="font-size: 35px;">Toriel</div>
+                    <ul class="tabs transparent">
+                        <li class="tab col s6">
+                            <a href="#tori" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Default</span></a>
+                        </li>
+        
+                        <li class="tab col s6">
+                            <a href="#torie" class="active blue-text text-lighten-1"><span style="font-size: 20px;">Face</span></a>
+                        </li>
+                    </ul>
+
+                    <div id="tori" class="col s12 center" style="align-items: center;">
+                        <img width="150px" style="margin-top: 10px;" src="sprite/Toriel_overworld.webp" alt="">
+                    </div>
+
+                    <div id="torie" class="col s12 center">
+                        <img width="350px" style="margin-top: 10px;" src="sprite/Toriel_face.webp" alt="">
+                    </div>
+
+                    <p class="white-text" style="padding-top: 325px;">Toriel is a returning character from UNDERTALE and is Kris and Asriel's mother.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <footer style="margin-top: 50px;">
+        <div class="footer-copyright center-align">
+            <img style="margin: 10px;" src="misc/Annoying_Dog_overworld.webp" alt="dog">
+            <div class="center-align black-text">DELTARUNE &copy; Toby Fox 2018-2025. All Rights Reserved.</div>
+        </div>
+    </footer>
+            
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Deltarune Fan Wiki</title>
+    <style>
+        body{
+            font-family: 'Determination';
+            font-size: 20px;
+            /* background-image: linear-gradient(to bottom, rgb(3, 3, 82), rgb(111, 18, 18)); */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            background-color: black;
+        }
+
+        header h1{
+            font-family: 'Deltarune';
+            font-size: 100px;
+            margin-top: 300px;
+            color: black;
+        }
+
+        header h2{
+            font-family: 'Determination';
+            color: black;
+            margin-top: -40px;
+            font-size: 35px;
+        }
+
+        header .container{
+            padding-top: 50px;
+        }
+
+        @media screen and (min-width: 961px) and (max-width: 1400px){
+
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 960px){
+
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 700px){
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 18px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                height: 15px !important;
+                width: 15px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 15px 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 13px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                display: inline-block;
+                height: 10px !important;
+                width: 10px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 10px 10px !important;
+            }
+        }
+
+        nav{
+            background-image: linear-gradient(to right, rgb(81, 36, 16), rgb(123, 87, 42), rgb(81, 36, 16));
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            /* background-image: linear-gradient(to right, #6a7bc4, #4dcc8e, #9f18cf); */
+        }
+
+        nav a img{
+            width: 175px;
+            margin-top: 17px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        nav ul li a{
+            font-size: 17px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a .tooltip{
+            font-size: 15px;
+            z-index: 10000;
+        }   
+
+        nav ul li a img{
+            width: 25px;
+            margin: 0 auto;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a:hover{
+            color: orange;
+            text-shadow: 0 0 7px black;
+        }
+
+        nav .sidenav{
+            background-image: linear-gradient(to bottom, white, #00ffff);
+        }
+
+        div .container h2{
+            font-size: 100px;
+        }
+
+        body::selection{
+            background-color: red;
+            color: yellow;
+        }
+
+        footer{
+            background-image: linear-gradient(to right, rgb(81, 36, 16), rgb(123, 87, 42), rgb(81, 36, 16));
+            bottom: 0;
+        }
+
+        .container .row .col.s8.push-s2 .card{
+            box-shadow: 0 0 10px white;
+        }
+
+        a span{
+            transition: all 0.3s ease;
+        }
+
+        a span:hover{
+            color: yellow !important;
+        }
+        
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active{
+            background: transparent;
+            color: yellow !important;
+        }
+
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-right: 8px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px
+        }
+
+        .tabs.transparent .indicator{
+            background-color: white;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover{
+            color: yellow !important;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover::before{
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 18px 18px
+        }
+
+        a span:hover::before{
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 21px 21px
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo"><img src="misc/IMAGE_LOGO_0.png" alt="deltarune logo"></a>
+    
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="more.html">More</a></li>
+                    <li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/" class="tooltipped" data-position="bottom" data-tooltip="BUY NOW for a [Specil] DEAL OF [[20 KROMER]]"><img src="misc/Undertale_red_soul.svg.png" alt="SOUL."></a></li>
+                </ul>
+                </div>
+                
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#"><img src="misc/Undertale_red_soul.svg.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="responsive-video container center-align" style="margin-top: 110px; max-width: 100%; object-fit: cover;">
+        <video width="900" height="600" style="object-fit: cover;" autoplay controls loop src="misc/Deltarune Intro.mp4"></video>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="title">
+                <h3 style="border-bottom-style: solid; border-bottom-width: 2px; padding-bottom: 30px; font-family: 'Deltarune'; color: rgb(209, 156, 92); border-color: rgb(209, 156, 92); text-shadow: 0 0 10px brown;" class="center-align">the legend of dELTA RUNE</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <p style="font-size: 20px; padding: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nihil aperiam? Iusto minus dolore amet, illo autem fuga ipsum sapiente harum assumenda ducimus nam impedit ex quidem blanditiis quasi minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem repudiandae nihil officia molestiae, quas corporis corrupti reprehenderit odio nisi fugiat laboriosam rerum distinctio pariatur, totam earum quibusdam, reiciendis iure?</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title">
+                <h3 style="border-bottom-style: solid; border-bottom-width: 2px; padding-bottom: 30px; font-family: 'Deltarune'; color: rgb(209, 156, 92); border-color: rgb(209, 156, 92); text-shadow: 0 0 10px brown;" class="center-align">the three heroes</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <p style="font-size: 20px; padding: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nihil aperiam? Iusto minus dolore amet, illo autem fuga ipsum sapiente harum assumenda ducimus nam impedit ex quidem blanditiis quasi minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem repudiandae nihil officia molestiae, quas corporis corrupti reprehenderit odio nisi fugiat laboriosam rerum distinctio pariatur, totam earum quibusdam, reiciendis iure?</p>
+        </div>
+    </section>
+
+    <div class="container center-align">
+        <a href="ch1.html"><span class="white-text" style="font-size: 30px;">Continue to Chapter 1 →</span></a>
+    </div>
+
+    <footer style="margin-top: 50px;">
+        <div class="footer-copyright center-align">
+            <img style="margin: 10px;" src="misc/Annoying_Dog_overworld.webp" alt="dog">
+            <div class="center-align white-text">DELTARUNE &copy; Toby Fox 2018-2025. All Rights Reserved.</div>
+        </div>
+    </footer>
+            
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
+            $('materialboxed').materialbox();
+        })
+    </script>
+</body>
+</html>

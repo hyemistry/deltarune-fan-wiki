@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Determination';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/Determination\ Sans.eot');
+  src: url('fonts/Determination\ Sans.woff2') format('woff2'),
+       url('fonts/Determination\ Sans.woff') format('woff'),
+       url('fonts/Determination\ Sans.ttf') format('truetype'),
+       url('fonts/Determination\ Sans.svg') format('svg'),
+       url('fonts/Determination\ Sans.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Determination Mono';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/Determination\ Mono.eot');
+  src: url('fonts/Determination\ Mono.woff2') format('woff2'),
+       url('fonts/Determination\ Mono.woff') format('woff'),
+       url('fonts/Determination\ Mono.ttf') format('truetype'),
+       url('fonts/Determination\ Mono.svg') format('svg'),
+       url('fonts/Determination\ Mono.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Undertale Comic Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/Comic\ Sans.eot') format('embedded-opentype');
+  src: url('fonts/Comic\ Sans.woff') format('woff'),
+       url('fonts/Comic\ Sans.woff2') format('woff2'),
+       url('fonts/Comic\ Sans.ttf') format('truetype'),
+       url('fonts/Comic\ Sans.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Deltarune';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/deltarune.ttf') format('truetype');
+}
