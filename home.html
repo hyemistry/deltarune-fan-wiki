@@ -70,7 +70,22 @@
                 margin-top: -40px;
                 font-size: 30px;
             }
+
+        span a{
+            transition: all 0.3s ease;
+            font-size: 25px !important;
         }
+
+        span a:hover::before{
+            display: inline-block;
+            height: 20px !important;
+            width: 20px !important;
+            margin-right: 8px !important;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 20px 20px !important;
+        }
+    }
 
         @media screen and (min-width: 481px) and (max-width: 700px){
             header{
@@ -86,9 +101,24 @@
                 margin-top: -40px;
                 font-size: 25px;
             }
+
+        span a{
+            transition: all 0.3s ease;
+            font-size: 25px !important;
         }
 
-        @media screen and (max-width: 670px) {
+        span a:hover::before{
+            display: inline-block;
+            height: 18px !important;
+            width: 18px !important;
+            margin-right: 8px !important;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 18px 18px !important;
+        }
+        }
+
+        @media screen and (max-width: 481px) {
             header{
                 min-height: 500px;
             }
@@ -102,8 +132,27 @@
                 margin-top: -40px;
                 font-size: 25px;
             }
+
+            .card-content p{
+                font-size: 18px;
+            }
+
+        span a{
+            transition: all 0.3s ease;
+            font-size: 18px !important;
         }
 
+        span a:hover::before{
+            display: inline-block;
+            height: 15px !important;
+            width: 15px !important;
+            margin-right: 5px !important;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px !important;
+        }
+        }
+        
         nav{
             background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
             position: fixed;
@@ -220,9 +269,9 @@
 
     </header>
 
-    <!-- <div>
+    <div>
         <audio autoplay loop src="audio/Toby Fox - ANOTHER HIM.mp3"></audio>
-    </div> -->
+    </div>
 
     <div class="container">
         <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding: 20px;">
@@ -240,10 +289,6 @@
         <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding: 20px;">
             <p style="font-size: 30px; margin: 0; padding-left: 20px;">* Only then will the three destined heroes appear to banish the Angel's Heaven. </p>
         </div>
-    </div>
-
-    <div class="center-align" style="margin: 50px;">
-        <img style="max-width: 100%;" src="misc/the-origin-of-images-depths-has-been-found-v0-mqh86m8knvvc1.webp" alt="">
     </div>
 
     <div class="center-align" style="margin: 50px;">
@@ -265,17 +310,42 @@
             <p style="font-size: 30px; margin: 0; padding-left: 20px;text-shadow: 2.5px 2px 0 black"><img style="max-width: 20px;" src="misc/Undertale_red_soul.svg.png" alt=""> Traverse sceneries!</p>
     </div>
         
-    <div class="center-align" style="margin: 50px;">
-        <img style="max-width: 100%;" src="places/Screenshot (975).png" alt="">
+
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col s6" style="margin-bottom: 20px;">
+            <img class="responsive-img" src="places/Screenshot (975).png" alt="">
+        </div>
+
+        <div class="col s6" style="margin-bottom: 20px;">
+            <img class="responsive-img" src="misc/Screenshot (987).png" alt="">
+        </div>
+
+        <div class="col s6 offset-s3">
+            <img class="responsive-img" src="misc/Screenshot (988).png" alt="">
+        </div>
     </div>
+</div>
     
     <div class="center-align yellow-text">
         <p style="font-size: 30px; margin: 0; padding-left: 20px; text-shadow: 2.5px 2px 0 black"><img style="max-width: 20px;" src="misc/Undertale_red_soul.svg.png" alt=""> Fight or befriend enemies!</p>
     </div>
     
-    <div class="center-align" style="margin: 50px;">
-        <img style="max-width: 100%;" src="places/Screenshot (973).png" alt="">
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col s6" style="margin-bottom: 20px;">
+            <img class="responsive-img" src="places/Screenshot (973).png" alt="">
+        </div>
+
+        <div class="col s6" style="margin-bottom: 20px;">
+            <img class="responsive-img" src="misc/Screenshot (989).png" alt="">
+        </div>
+
+        <div class="col s6 offset-s3">
+            <img class="responsive-img" src="misc/Rudinn_and_Hathy_encounter_screenshot.jpg" alt="">
+        </div>
     </div>
+</div>
     
     <div class="center-align">
         <p style="font-size: 30px; margin: 0; padding-left: 20px;">this is</p>
@@ -308,10 +378,10 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #004fdf;}">
                     <div class="card-image">
-                        <img height="352px" style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/Queen 27s_Mansion_location.jpg" alt="">
+                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/Queen 27s_Mansion_location.jpg" alt="">
                     </div>
                     <div class="card-content">
                         <span class="card-title"><a style="font-size: 35px; color: white;" href="bosses.html">Bosses</a></span>
@@ -320,19 +390,19 @@
                 </div>
             </div>
 
-            <div class="col s6">
-                <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
-                    <div class="card-image">
-                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/do-these-different-titan-spawns-grow-to-be-different-v0-r4qoq2xjm38f1.webp" alt="">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title"><a style="font-size: 35px; color: white;" href="maintenance.html">Enemies</a></span>
-                        <p class="white-text">The enemies for each chapter of DELTARUNE.</p>
+                <div class="col s6 offset-s3">
+                    <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
+                        <div class="card-image">
+                            <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/do-these-different-titan-spawns-grow-to-be-different-v0-r4qoq2xjm38f1.webp" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title"><a style="font-size: 35px; color: white;" href="maintenance.html">Enemies</a></span>
+                            <p class="white-text">The enemies for each chapter of DELTARUNE.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
                         <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/Castle_Town_location.webp" alt="">
@@ -344,10 +414,10 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
-                        <img height="368px" style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/Unused_Music_artwork_Temmie.jpg" alt="">
+                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="misc/Unused_Music_artwork_Temmie.jpg" alt="">
                     </div>
                     <div class="card-content">
                         <span class="card-title"><a style="font-size: 35px; color: white;" href="music.html">Music</a></span>
@@ -376,7 +446,7 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
                         <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="sprite/grr1lao0lt081.png" alt="">
@@ -388,7 +458,7 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
                         <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="sprite/Cyber_Field_location.webp" alt="">
@@ -400,7 +470,7 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
                         <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="sprite/TV_World_location.png" alt="">
@@ -412,7 +482,7 @@
                 </div>
             </div>
 
-            <div class="col s6">
+            <div class="col s6 offset-s3">
                 <div class="card blue" style="margin-top: 10px; border-style: solid; border-radius: 20px; border-width: 10px; border-color: #004fdf; :hover {box-shadow: 0 0 20px #00ffff;}">
                     <div class="card-image">
                         <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;" src="sprite/chapter4.webp" alt="">
