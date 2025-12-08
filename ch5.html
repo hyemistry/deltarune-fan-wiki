@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Deltarune Fan Wiki</title>
+    <style>
+        body{
+            font-family: 'Determination';
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-image: linear-gradient(to bottom, #004fdf, black, black);
+        }
+
+        header h1{
+            font-family: 'Deltarune';
+            font-size: 100px;
+            margin-top: 300px;
+            color: black;
+        }
+
+        header h2{
+            font-family: 'Determination';
+            color: black;
+            margin-top: -40px;
+            font-size: 35px;
+        }
+
+        header .container{
+            padding-top: 50px;
+        }
+
+        @media screen and (min-width: 961px) and (max-width: 1400px){
+            header h1{
+                font-size: 90px;
+                margin-top: 225px;
+            }
+
+            header h2{
+                margin-top: -40px;
+                font-size: 35px;
+            }
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 960px){
+            header h1{
+                font-size: 75px;
+                margin-top: 180px;
+            }
+
+            header h2{
+                margin-top: -40px;
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 700px){
+            header h1{
+                font-size: 65px;
+                margin-top: 165px;
+            }
+
+            header h2{
+                margin-top: -40px;
+                font-size: 25px;
+            }
+
+
+            h3{
+                font-size: 34px !important;
+                padding: 0;
+            }
+
+            .container p{
+                font-size: 23px !important;
+            }
+
+            .center-align img{
+                max-width: 15vh !important;
+            }
+
+            footer .center-align.black-text{
+                font-size: 18px !important;
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            header h1{
+                font-size: 65px;
+                margin-top: 150px;
+            }
+
+            header h2{
+                margin-top: -40px;
+                font-size: 25px;
+            }
+
+            h3{
+                font-size: 28px !important;
+                padding: 0;
+            }
+
+            .container p{
+                font-size: 18px !important;
+            }
+
+            .center-align img{
+                max-width: 13vh !important;
+            }
+
+            footer .center-align.black-text{
+                font-size: 14px !important;
+            }
+        }
+
+        nav{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+            /* background-image: linear-gradient(to right, #6a7bc4, #4dcc8e, #9f18cf); */
+        }
+
+        nav a img{
+            width: 175px;
+            margin-top: 17px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        nav ul li a{
+            font-size: 17px;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a .tooltip{
+            font-size: 15px;
+            z-index: 10000;
+        }
+
+        nav ul li a img{
+            width: 25px;
+            margin: 0 auto;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a:hover{
+            color: red;
+            text-shadow: 0 0 7px white, 0 0 10px black, 0 0 20px black;
+        }
+
+        nav .sidenav{
+            background-image: linear-gradient(to bottom, white, #00ffff);
+        }
+
+        div .container h2{
+            font-size: 100px;
+        }
+
+        body::selection{
+            background-color: red;
+            color: yellow;
+        }
+
+        footer{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            bottom: 0;
+        }
+
+        a span{
+            transition: all 0.3s ease;
+        }
+
+        a span:hover{
+            color: yellow !important;
+        }
+
+        a span:hover::before{
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 21px 21px
+        }
+
+        span{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo"><img src="misc/IMAGE_LOGO_0.png" alt="deltarune logo"></a>
+    
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="more.html">More</a></li>
+                    <li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/" class="tooltipped" data-position="bottom" data-tooltip="BUY NOW for a [Specil] DEAL OF [[20 KROMER]]"><img src="misc/Undertale_red_soul.svg.png" alt="SOUL."></a></li>
+                </ul>
+                </div>
+                
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#"><img src="misc/Undertale_red_soul.svg.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <div class="container">
+        <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding: 20px;">
+            <p style="font-size: 30px; margin: 0; padding-left: 20px;">* Once upon a time, a legend was whispered amongst shadows—a legend of hopes and dreams; of LIGHT and DARK.</p>
+        </div>
+    </div> -->
+
+    <section>
+        <div class="container" style="padding-top: 100px;">
+            <div class="title">
+                <h3 style="border-bottom-style: solid; border-bottom-width: 2px; padding-bottom: 30px; font-family: 'Deltarune'; color: white; border-color: white; text-shadow: 0 0 10px white;" class="center-align">oh no!</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <p style="font-size: 28px; padding: 30px;">Chapter 5 of DELTARUNE will be released <span>next year</span>, 2026.<br><br>For now, have this dancing Tenna.</p>
+        </div>
+    </section>
+
+    <div class="center-align">
+        <a href="tenna.html"><img style="max-width: 300px; margin-bottom: 50px;" src="misc/Cabbage_Dance.webp" alt=""></a>
+    </div>
+
+    <footer style="margin-top: 50px;">
+        <div class="footer-copyright center-align">
+            <img style="margin: 10px;" src="misc/Annoying_Dog_overworld.webp" alt="dog">
+            <div class="center-align black-text">DELTARUNE &copy; Toby Fox 2018-2025. All Rights Reserved.</div>
+        </div>
+    </footer>
+            
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+        })
+    </script>
+</body>
+</html>
