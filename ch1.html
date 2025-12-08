@@ -46,7 +46,13 @@
                 font-size: 35px !important;
                 padding-bottom: 15px !important;
             }
-
+            div#problem{
+                display: none;
+            }
+            footer{
+                position: relative;
+                bottom: -100%;
+            }
             .card.black p{
                 font-size: 45px !important;
             }
@@ -68,13 +74,17 @@
                 font-size: 23px !important;
             }
 
-            a span::before{
+            a span::before, .container .card.black .row.center .col.s6 p a:hover::before{
                 height: 18px !important;
                 width: 18px !important;
                 margin-right: 8px !important;
                 content: "" !important;
                 background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
                 background-size: 18px 18px !important;
+            }
+                
+            .row.center .col.s6 a{
+                font-size: 23px !important;
             }
         }
 
@@ -96,7 +106,9 @@
                 font-size: 33px !important;
                 padding-bottom: 15px !important;
             }
-
+            div#problem{
+                display: none;
+            }
             .card.black p{
                 font-size: 40px !important;
             }
@@ -118,13 +130,21 @@
                 font-size: 23px !important;
             }
 
-            a span::before{
+            a span::before, .container .card.black .row.center .col.s6 p a:hover::before{
                 height: 18px !important;
                 width: 18px !important;
                 margin-right: 8px !important;
                 content: "" !important;
                 background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
                 background-size: 18px 18px !important;
+            }
+
+            .row.center .col.s6 a{
+                font-size: 23px !important;
+            }
+
+            footer .center-align.black-text{
+                font-size: 20px !important;
             }
         }
 
@@ -142,7 +162,14 @@
                 background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
                 background-size: 10px 10px !important;
             }
-
+            div#problem{
+                display: none;
+            }
+            div#solve{
+                position: relative;
+                bottom: -20em;
+                margin-bottom: 0;
+            }
             h3{
                 font-size: 25px !important;
                 padding-bottom: 15px !important;
@@ -168,19 +195,34 @@
 
             footer .center-align.white-text{
                 font-size: 15px !important;
+
             }
 
             a span{
                 font-size: 20px !important;
             }
 
-            a span::before{
+            a span::before, .container .card.black .row.center .col.s6 p a:hover::before{
                 height: 15px !important;
                 width: 15px !important;
                 margin-right: 8px !important;
                 content: "" !important;
                 background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
                 background-size: 15px 15px !important;
+            }
+
+            .row.center .col.s6 a{
+                font-size: 20px !important;
+            }
+
+            footer .center-align.black-text{
+                font-size: 17px !important;
+            }
+        }
+
+        @media screen and (max-width: 993px){
+            section img{
+                margin-top: -25px;
             }
         }
 
@@ -241,7 +283,9 @@
 
         footer{
             background-image: linear-gradient(to right, rgb(13, 13, 101), rgb(17, 17, 122), rgb(73, 32, 64));
-            bottom: 0;
+            bottom: 0%;
+            
+            position: relative;
         }
 
         .container .row .col.s8.push-s2 .card{
@@ -351,10 +395,8 @@
             <p style="font-size: 20px; padding: 30px;">The voice will first ask the player to create their own avatar... or will they? <br><br>The choices you made don't matter. <br><br>Regardless of what you made, your name will still be...</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/Deltarune_-_Screenshot_-_CONTACT_-_16.webp" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/Deltarune_-_Screenshot_-_CONTACT_-_16.webp" alt="">
         </div>
     </section>
 
@@ -369,10 +411,8 @@
             <p style="font-size: 20px; padding: 30px;">Kris. <br><br>You, the player's soul, now inhabits the body of Kris Dreemurr, the sole human living in the town of Hometown. You then discover how familiar certain characters were... <br><br>Are you in an alternate dimension of some sort?</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/deltarune-chapter-1-to-school.avif" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/deltarune-chapter-1-to-school.avif" alt="">
         </div>
     </section>
     
@@ -388,10 +428,8 @@
             <p style="font-size: 20px; padding: 30px;">After a while of your mother Toriel driving you to the school (despite it being literally near your house), you meet again with your classmates. <br><br> Being the latecomer you are, Alphys, your teacher, tells you to get a project partner. To no avail, no one was available except Noelle who was willing to give you a spot in her and Berdly's truce. <br><br>Then, she arrived. <br><br>Susie. The chalk-eating monster bully. <br><br>As Alphys ran out of chalk to write with, she asked you and Susie to go fetch some chalk for her in the school closet... so you did. <br><br>Until... you notice something weird: The school closet was shrouded in darkness. <br><br>You and Susie assumed it would be fine to enter because it's the school closet anyways. Nothing bad will happen, right? <br><br>RIGHT?</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/deltarune-chapter-2.avif" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/deltarune-chapter-2.avif" alt="">
         </div>
     </section>
 
@@ -406,11 +444,10 @@
             <p style="font-size: 20px; padding: 30px;">nO SORRY That title is from a different story. <br><br>Anyway. <br><br>You woke up on a desolate land below. Of course it would be dark, too. And you got new clothes! Pretty cool, huh? <br><br>But when you arrived, Susie wasn't there. You later found her in the far cliffs, as she had already left before you could even make sense of what's happening.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/4rspy5hf5lb91.png" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/4rspy5hf5lb91.png" alt="">
         </div>
+
     </section>
 
     <section>
@@ -424,10 +461,8 @@
             <p style="font-size: 20px; padding: 30px;">You and Susie later arrived near a cliff. However, a certain spade person began attacking you! <br><br>RUN!</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/hq720.jpg" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/hq720.jpg" alt="">
         </div>
     </section>
 
@@ -442,11 +477,10 @@
             <p style="font-size: 20px; padding: 30px;">After a while of running away from the weirdo, you two then stumbled upon a... castle? <br><br>There was an inhabitant, who introduced himself as Ralsei, the Prince of Darkness. He then tells you about the prophecy of the three heroes. <br><br>Susie thought what he was saying was a joke, and so she left almost immediately after.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/Screenshot (991).png" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/Screenshot (991).png" alt="">
         </div>
+
     </section>
 
     <section>
@@ -460,10 +494,8 @@
             <p style="font-size: 20px; padding: 30px;">And of course, as a good person, you immediately sought after her in the Fields on the east of the kingdom.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="places/Field_location.webp" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="places/Field_location.webp" alt="">
         </div>
     </section>
 
@@ -478,10 +510,8 @@
             <p style="font-size: 20px; padding: 30px;">As she went on a violent spree, now you had to stop here before things go haywire. Since she won't cooperate, you had to manually warn Darkners of her incoming attack!</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/Screenshot (993).png" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/Screenshot (993).png" alt="">
         </div>
     </section>
 
@@ -496,10 +526,8 @@
             <p style="font-size: 20px; padding: 30px;">Susie wouldn't stop—she even joined Lancer!</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/fun-fact-the-lancer-and-susie-boss-fight-will-actually-v0-s1zgy3kdvooe1.webp" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/fun-fact-the-lancer-and-susie-boss-fight-will-actually-v0-s1zgy3kdvooe1.webp" alt="">
         </div>
     </section>
 
@@ -514,10 +542,8 @@
             <p style="font-size: 20px; padding: 30px;">Later on, as the party was captured by the forces of the Card Kingdom, Susie finds a way out of her cell only to discover that Lancer was a part of the scheme after all. <br><br>So, she fought him. <br><br>But even she couldn't bring herself to hurt him. <br><br>So eventually, she stopped being violent for once.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/tumblr_inline_plbaf7gLoZ1tnlh39_500.gif" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/tumblr_inline_plbaf7gLoZ1tnlh39_500.gif" alt="">
         </div>
     </section>
 
@@ -532,10 +558,8 @@
             <p style="font-size: 20px; padding: 30px;">As the reconciled party explore the rest of the Card Kingdom to find the astray Dark Fountain, a guyeth bearing the glorious nameth of Rouxls Kaard hath shown himself.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/found-this-room-in-chapter-1-containing-a-guy-called-rouxls-v0-t1lfts9gs6de1.webp" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/found-this-room-in-chapter-1-containing-a-guy-called-rouxls-v0-t1lfts9gs6de1.webp" alt="">
         </div>
     </section>
 
@@ -550,10 +574,8 @@
             <p style="font-size: 20px; padding: 30px;">One boss fight later, they finally encounter the final obstacle in this Dark World: King, Lancer's dad. He's also a spade, so that also makes him the King of Spades. <br><br>Enough of my nonsense talk. <br><br>Let's go seal that fountain.</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/ynn52a2vhjx11.jpg" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/ynn52a2vhjx11.jpg" alt="">
         </div>
     </section>
 
@@ -568,10 +590,8 @@
             <p style="font-size: 20px; padding: 30px;">Now that the first Dark Fountain is sealed, what awaits them tomorrow?</p>
         </div>
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img style="background-attachment: fixed; background-size: cover; background-position: center; max-width: 100%;" class="responsive-img" src="misc/Dark_Fountain_screenshot.webp" alt="">
-            </div>
+        <div class="container center-align">
+           <img class="responsive-img" src="misc/Dark_Fountain_screenshot.webp" alt="">
         </div>
     </section>
 
