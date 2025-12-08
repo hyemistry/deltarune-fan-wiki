@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -499,4 +500,507 @@
         })
     </script>
 </body>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Deltarune Fan Wiki</title>
+    <style>
+        body{
+            font-family: 'Determination';
+            font-size: 20px;
+            background-image: url(misc/Castle_Town_location.webp);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        header h1{
+            font-family: 'Deltarune';
+            font-size: 100px;
+            margin-top: 300px;
+            color: black;
+        }
+
+        header h2{
+            font-family: 'Determination';
+            color: black;
+            margin-top: -40px;
+            font-size: 35px;
+        }
+
+        header .container{
+            padding-top: 50px;
+        }
+
+        @media screen and (min-width: 961px) and (max-width: 1400px){
+
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 960px){
+
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 700px){
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 18px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                height: 15px !important;
+                width: 15px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 15px 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+            .container .row .col.s8.push-s2 .card .card-content .tabs.transparent .tab.col.s6 a span{
+                font-size: 13px !important;
+            }
+
+            .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+                display: inline-block;
+                height: 10px !important;
+                width: 10px !important;
+                margin-right: 7px !important;
+                content: "" !important;
+                background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+                background-size: 10px 10px !important;
+            }
+        }
+
+        nav{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            /* background-image: linear-gradient(to right, #6a7bc4, #4dcc8e, #9f18cf); */
+        }
+
+        nav a img{
+            width: 175px;
+            margin-top: 17px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        nav ul li a{
+            font-size: 17px;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a .tooltip{
+            font-size: 15px;
+            z-index: 10000;
+        }
+
+        nav ul li a img{
+            width: 25px;
+            margin: 0 auto;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a:hover{
+            color: red;
+            text-shadow: 0 0 7px white, 0 0 10px black, 0 0 20px black;
+        }
+
+        nav .sidenav{
+            background-image: linear-gradient(to bottom, white, #00ffff);
+        }
+
+        div .container h2{
+            font-size: 100px;
+        }
+
+        body::selection{
+            background-color: red;
+            color: yellow;
+        }
+
+        footer{
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #00ff00);
+            bottom: 0;
+        }
+
+        .container .row .col.s6 .card{
+            box-shadow: 0 0 10px white;
+        }
+
+        a span{
+            transition: all 0.3s ease;
+        }
+
+        a span:hover{
+            color: yellow !important;
+        }
+        
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active{
+            background: transparent;
+            color: yellow !important;
+        }
+
+        .tabs.transparent .tab.col.s6:focus, .tabs .tab a:focus.active::before{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-right: 8px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px
+        }
+
+        .tabs.transparent .indicator{
+            background-color: white;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover{
+            color: yellow !important;
+        }
+
+        .container .card.black .row.center .col.s6 p a:hover::before{
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 18px 18px
+        }
+
+        a span:hover::before{
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            margin-right: 12px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 21px 21px
+        }
+
+        ol li a{
+            transition: all 0.3s ease;
+            color: white !important
+        }
+
+        ol li a:hover{
+            color: yellow !important;
+        }
+
+        ol li a:hover::before{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+            content: "";
+            background: url(misc/Undertale_red_soul.svg.png) no-repeat 0 0;
+            background-size: 15px 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo"><img src="misc/IMAGE_LOGO_0.png" alt="deltarune logo"></a>
+    
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="more.html">More</a></li>
+                    <li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/" class="tooltipped" data-position="bottom" data-tooltip="BUY NOW for a [Specil] DEAL OF [[20 KROMER]]"><img src="misc/Undertale_red_soul.svg.png" alt="SOUL."></a></li>
+                </ul>
+                </div>
+                
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#"><img src="misc/Undertale_red_soul.svg.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 60px;">
+        <div class="card black" style="border-style: solid; border-color: white; border-width: 8px; margin-top: 50px; padding-top: 20px; padding-bottom: 20px;">
+            <p style="font-size: 50px; margin: 0; padding-left: 20px; text-align: center; color: yellow;"><img src="misc/Undertale_red_soul.svg.png" style="width: 35px" alt=""> MUSIC</p>
+            <div class="row center">
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#ch1">Chapter 1</a></p>
+                </div>
+
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#ch3">Chapter 3</a></p>
+                </div>
+            
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#ch2">Chapter 2</a></p>
+                </div>
+
+                <div class="col s6">
+                    <p><a style="font-size: 25px; color: white;" href="#ch4">Chapter 4</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-align scrollSpy" style="margin: 50px;" id="main">
+        <img src="misc/SAVE_Point_overworld.webp" alt="">
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s6 offset-s3 scrollSpy" id="ch1">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, black, darkblue);">
+                <div class="card-content">
+                    <div class="card-title blue-text center" style="font-size: 35px;">Chapter 1</div>
+                    <ol style="font-size: 20px; place-items: center; color: rgb(238, 92, 92);">
+                        <li><a href="https://open.spotify.com/track/63K6koyn1kUIXj4soQ9wNl?si=2590248a948f401f">ANOTHER HIM</a></li>
+                        <li><a href="https://open.spotify.com/track/5NiD264RGry4WmWRRAZ0uN?si=fa3a7ff00c0547a3">Beginning</a></li>
+                        <li><a href="https://open.spotify.com/track/1xIYcuzRrYEfMkh7CjSKoF?si=8ec0efec1a204e9f">School</a></li>
+                        <li><a href="https://open.spotify.com/track/72tN7vUHvkke6lUwCb2lDy?si=1ec0cd61c3734345">Susie</a></li>
+                        <li><a href="https://open.spotify.com/track/0r1IrLoXomZ3JFSd4Khp1h?si=2bcbe17d866b4a63">The Door</a></li>
+                        <li><a href="https://open.spotify.com/track/5PiPRr9KGpqWW12Kwq3FsV?si=94fedc783db64909">Cliffs</a></li>
+                        <li><a href="https://open.spotify.com/track/1PnxSUmMmpIDWWBhMEY56C?si=6d14b0cd3707491f">The Chase</a></li>
+                        <li><a href="https://open.spotify.com/track/1ZA8wuVp91YbS1uif1hyYR?si=b3723a3d1b7a45b7">The Legend</a></li>
+                        <li><a href="https://open.spotify.com/track/2uE9ZTSf2wJINqCHOrV6a0?si=5ce11e875ae04da0">Lancer</a></li>
+                        <li><a href="https://open.spotify.com/track/322mgWaD4DetiHmoDVlwWc?si=d6e1efe26fe94a30">Rude Buster</a></li>
+                        <li><a href="https://open.spotify.com/track/6Z9eoMfegGE6pQc9Toawnd?si=49dee663c4624684">Empty Town</a></li>
+                        <li><a href="https://open.spotify.com/track/3XFaNF6EbDJdSr3InmAxJO?si=57bd0ff1a30b462c">Weird Birds</a></li>
+                        <li><a href="https://open.spotify.com/track/2W90IO8eRnFg1qsPunKm9B?si=12a2536049434fbb">Field of Hopes and Dreams</a></li>
+                        <li><a href="https://open.spotify.com/track/1r3DdJ79HTJ2V62OipRyoC?si=862f0115e745435a">Fanfare (from 'Rose of Winter')</a></li>
+                        <li><a href="https://open.spotify.com/track/0fBXFpNA9Movn5G2WHPgbM?si=f4c9329532dc4dde">Lantern</a></li>
+                        <li><a href="https://open.spotify.com/track/6actYECaeFH1vOyOUCvTT9?si=361cb312f1704876">I'm Very Bad</a></li>
+                        <li><a href="https://open.spotify.com/track/6p3ckEGHB7tIiBmHLWZlVf?si=9081a875737f4c1f">Checker Dance</a></li>
+                        <li><a href="https://open.spotify.com/track/6jNxEc8nmpFBj3Pje7BVbx?si=86d6c03f626243c4">Quiet Autumn</a></li>
+                        <li><a href="https://open.spotify.com/track/4zLEqCe2KCWBJLKN3RyWAG?si=2681d378838d48d8">Scarlet Forest</a></li>
+                        <li><a href="https://open.spotify.com/track/2gafFAtDIGgDQLiEpRokIx?si=a29305ef754e40e9">Thrash Machine</a></li>
+                        <li><a href="https://open.spotify.com/track/2LsYIw2gn24nkzgwA2g4gw?si=8bb86db47207426f">Vs. Lancer</a></li>
+                        <li><a href="https://open.spotify.com/track/1XfSpjUBuZwrNUDV8AbYpZ?si=b48b4be31ac44a72">Basement</a></li>
+                        <li><a href="https://open.spotify.com/track/1aSimBo97eJ6bHr5vrpoKd?si=40341f06c1434282">Imminent Death</a></li>
+                        <li><a href="https://open.spotify.com/track/5ydKiJ69LWOzfSya9ojhE4?si=137a6d617c9e4e26">Vs. Susie</a></li>
+                        <li><a href="https://open.spotify.com/track/6JuC5mhOzqPt8lEGfQJQ05?si=6abf73d941994516">Card Castle</a></li>
+                        <li><a href="https://open.spotify.com/track/6cQuiiADGJDs4H7SfIJdYF?si=641857327eb4430f">Rouxls Kaard</a></li>
+                        <li><a href="https://open.spotify.com/track/0HuvIX3Jul87KRTOGpGr9P?si=0a563ace221946f8">April 2012</a></li>
+                        <li><a href="https://open.spotify.com/track/2ASkgao4Nv7FtY9AjASDNQ?si=33209d3ad3264418">Hip Shop</a></li>
+                        <li><a href="https://open.spotify.com/track/5zDC9xOmwH1yb7KttqbaDH?si=04051e6d398c4a64">Gallery</a></li>
+                        <li><a href="https://open.spotify.com/track/5zDC9xOmwH1yb7KttqbaDH?si=6284c04f0ed04b1f">Chaos King</a></li>
+                        <li><a href="https://open.spotify.com/track/1eodgnlUYiH3s0q99vk18p?si=ec0984f812a64f10">Darkness Falls</a></li>
+                        <li><a href="https://open.spotify.com/track/1N2FBAFlTdHDCRUXq0XHPf?si=9e4a14e4f5324858">The Circus</a></li>
+                        <li><a href="https://open.spotify.com/track/5QBozbgRWIYDSriHCRTsXd?si=e5519e9b0a724152">THE WORLD REVOLVING</a></li>
+                        <li><a href="https://open.spotify.com/track/2R6MB4GkUVnRwLN5VXHiDF?si=016d0b2e59064da2">Friendship</a></li>
+                        <li><a href="https://open.spotify.com/track/2DORTEXJd9o5Gdhr57M5yC?si=65e849eb4cec444e">THE HOLY</a></li>
+                        <li><a href="https://open.spotify.com/track/4eLHWCv6pLrxvpKomdGx5w?si=bf34db0f3a294865">Your Power</a></li>
+                        <li><a href="https://open.spotify.com/track/1He6isaU9SoB6GzIM2lx6Z?si=ae7148ed088e4acc">A Town Called Hometown</a></li>
+                        <li><a href="https://open.spotify.com/track/1pZrOGjhNld3S2QHdEt87N?si=556f13d2d1f3465a">You Can Always Come Home</a></li>
+                        <li><a href="https://open.spotify.com/track/7y6NbGuLZuNW0lVaPnYx22?si=3528cf40623f4e6e">Don't Forget</a></li>
+                        <li><a href="https://open.spotify.com/track/4AwX5ALZ1RxU9x29ispTyS?si=184cbe6cebbc4736">Before the Story</a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+
+        <div class="col s6 offset-s3 scrollspy" id="ch2">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, darkcyan, purple);">
+                <div class="card-content">
+                    <div class="card-title center" style="font-size: 35px; color: pink; text-shadow: 2.5px 2px rgb(217, 1, 152);">Chapter 2</div>
+                    <ol style="font-size: 20px; place-items: center; text-shadow: 1.5px 1px 0 rgb(224, 44, 176); color: pink;">
+                        <li><a href="https://open.spotify.com/track/0wntsmQSoI55KsAD56KEAq?si=c6417afc7e914f80">Faint Glow</a></li>
+                        <li><a href="https://open.spotify.com/track/3elKCP0PpuipOtLn7K8FXT?si=49a8fe6d68d24be1">Girl Next Door</a></li>
+                        <li><a href="https://open.spotify.com/track/6g0y8cpi8c9eCPfz5XvW5T?si=9a2a4a40e9524820">My Castle Town</a></li>
+                        <li><a href="https://open.spotify.com/track/2rZU9qk1HWqWrKA7BKOWyy?si=3f38346aa16046c2">Ohhhhohohoho!</a></li>
+                        <li><a href="https://open.spotify.com/track/4fXX61n4gV1yfPbAdDmdcz?si=c60a34a748934e23">Queen</a></li>
+                        <li><a href="https://open.spotify.com/track/0BE2Lbu4GgcCT6kgB1tDTc?si=acbe8e39b5f6403a">A CYBER'S WORLD?</a></li>
+                        <li><a href="https://open.spotify.com/track/7CaYooLVhBdkhRjSHrntgD?si=d59c8adf811f484f">A Simple Diversion</a></li>
+                        <li><a href="https://open.spotify.com/track/3nVfeoR3BDeBqZhkxZTwFp?si=7badf628f5c440a2">Almost to the Guys!</a></li>
+                        <li><a href="https://open.spotify.com/track/1GDlWTtvFLS0ii1lNeG8lL?si=8dc14b27c71749f3">Cool Beat</a></li>
+                        <li><a href="https://open.spotify.com/track/3eZk3GxGcwVDPa1xIK4Fnp?si=f94a16b7a77a4ac0">When I Get Mad I Dance Like This</a></li>
+                        <li><a href="https://open.spotify.com/track/6VpzCI5KbudaEYSKPNwzY1?si=9c0378c16fe34b9b">Cyber Battle (Solo)</a></li>
+                        <li><a href="https://open.spotify.com/track/5ZBgN5tJHXUxQLv40xGe39?si=9c17622651b34848">When I Get Happy I Dance Like This</a></li>
+                        <li><a href="https://open.spotify.com/track/51XshBkYoRNSL5iRQD1SJF?si=9cbd387000774c7e">Sound Studio</a></li>
+                        <li><a href="https://open.spotify.com/track/3GtA0wC7ZV1LtiaKVcFARJ?si=81826d72210d4a42">Berdly</a></li>
+                        <li><a href="https://open.spotify.com/track/1GdTlOlPxxXhuA1Z4Tbf5H?si=0cbd0dcd95fd4958">Smart Race</a></li>
+                        <li><a href="https://open.spotify.com/track/1RDnckI3aDh19h9TJAUm3N?si=7b892d28e060479a">Faint Courage (Game Over)</a></li>
+                        <li><a href="https://open.spotify.com/track/30hbRoex1LUK0fShzTLR1C?si=ea87f0cb7b974cad">WELCOME TO THE CITY</a></li>
+                        <li><a href="https://open.spotify.com/track/2Y5yRdf42KyABdwUaafUgp?si=e9686f470cc94345">Mini Studio</a></li>
+                        <li><a href="https://open.spotify.com/track/67ER6SEIRevkaLsLhJCVzZ?si=8c8a841ed24d4c46">Holiday Studio</a></li>
+                        <li><a href="https://open.spotify.com/track/5UDxDGERH44CfeecPnpPLY?si=ff68a0c4f81a48ae">Cool Mixtape</a></li>
+                        <li><a href="https://open.spotify.com/track/3FwU0oJcpuWnu0eECt65jC?si=7b620fc7cde14ce1">HEY EVERY !</a></li>
+                        <li><a href="https://open.spotify.com/track/1dWgRROqpijnPVQS0LNJMf?si=a22395af3fcd4a41">Spamton</a></li>
+                        <li><a href="https://open.spotify.com/track/4RZCenPPiY28As8ZzeMYyv?si=df04faf4462449fc">NOW'S YOUR CHANCE TO BE A</a></li>
+                        <li><a href="https://open.spotify.com/track/0v32fKwN5VpiZYEW9bwcmI?si=165de45688a6488b">Elegant Entrance</a></li>
+                        <li><a href="https://open.spotify.com/track/3XfcINMr19vye9Imaazx0T?si=ba9c1c871843435d">Bluebird of Misfortune</a></li>
+                        <li><a href="https://open.spotify.com/track/7tNsMfItoswjCO5oOQgbBB?si=a891d51445224354">Pandora Palace</a></li>
+                        <li><a href="https://open.spotify.com/track/4GyPLAUgO1JdKe48giXBQo?si=3e8750a54ccf46c1">KEYGEN</a></li>
+                        <li><a href="https://open.spotify.com/track/3M1Xiw8PplJsehXCUdlGi2?si=bcbc3e5d60c44744">Acid Tunnel of Love</a></li>
+                        <li><a href="https://open.spotify.com/track/6zOVVoWfAnRMj5XfcvUoyF?si=d7e69952b5ea47f9">It's Pronounced "Rules"</a></li>
+                        <li><a href="https://open.spotify.com/track/4OaDjTKDu5wNML5Ia1AqOI?si=f53358d9519941fa">Lost Girl</a></li>
+                        <li><a href="https://open.spotify.com/track/7JGkl7TSwWcVlwtDuoHDLj?si=d10af1558f7a4846">Ferris Wheel</a></li>
+                        <li><a href="https://open.spotify.com/track/1K45maA9jDR1kBRpojtPmO?si=1eeaee3c520c4856">Attack of the Killer Queen</a></li>
+                        <li><a href="https://open.spotify.com/track/7gRPYFtMaq0KIOO7vIxCLd?si=9cbd2c7f6dc3480e">Giga Size</a></li>
+                        <li><a href="https://open.spotify.com/track/0t71OmjPF5oYOigH9p0AER?si=9cbc69f9707c4e4b">Powers Combined</a></li>
+                        <li><a href="https://open.spotify.com/track/7ARvBQv5g2gDmBGXM6VDCR?si=5eb7fe2abed44d9f">Knock You Down !!</a></li>
+                        <li><a href="https://open.spotify.com/track/49vU3wEaRNGzZIy1TATOlW?si=551e6510017d4978">The Dark Truth</a></li>
+                        <li><a href="https://open.spotify.com/track/21JQ1y4y0tBSwSJv0zV9K7?si=54d40f057197492f">Digital Roots</a></li>
+                        <li><a href="https://open.spotify.com/track/6pZ84L82buMFjAqev002Tv?si=a8647770b7a64188">Deal Gone Wrong</a></li>
+                        <li><a href="https://open.spotify.com/track/2hpQl8ryv3IonCg9LiAtGT?si=ab72811b52e24118">BIG SHOT</a></li>
+                        <li><a href="https://open.spotify.com/track/0LtRb6SfD9zAm1mZqfzsd1?si=2f2d734ae0bb4cf5">A Real Boy!</a></li>
+                        <li><a href="https://open.spotify.com/track/5Z4bnMj3gxU2a07jaiRwzs?si=75816969bb0f4256">Dialtone</a></li>
+                        <li><a href="https://open.spotify.com/track/3QrQeftqohPVWkqO0Dyj0u?si=edbd82adac2a41f0">sans.</a></li>
+                        <li><a href="https://open.spotify.com/track/3RhudFHKBLdUqcwTwRWSfm?si=3abec257894f4b97">Chill Jailbreak Alarm to Study and Relax To</a></li>
+                        <li><a href="https://open.spotify.com/track/2Rf33bpATyDiqTGm0NvlNb?si=fdca43a742434f13">You Can Always Come Home</a></li>
+                        <li><a href="https://open.spotify.com/track/4O0JVgOSsdJrj6Tao1ViEY?si=b0b76738c66848e5">Until Next Time</a></li>
+                        <li><a href="https://open.spotify.com/track/2JWq4IwxQB4O8yL3pMe6aj?si=14f06cf5899d4f68">Before the Story</a></li>
+                        <li><a href="https://open.spotify.com/track/3iJ2NyNrbp3WD1cXpEHMwp?si=56457b6ebc204432">Berdly (Rejected Concept)</a></li>
+                    </ol>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s6 offset-s3 scrollspy" id="ch3">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, rgb(60, 131, 60), rgb(152, 108, 26));">
+                <div class="card-content">
+                    <div class="card-title yellow-text center" style="font-size: 35px; text-shadow: 2.5px 2px red;">Chapter 3</div>
+                    <ol style="font-size: 20px; place-items: center; text-shadow: 1.5px 1px red; color: rgb(238, 230, 121)">
+                        <li><a href="https://open.spotify.com/track/5hsRssY21u2RnOzAaRPRPE?si=08ef770af7c04487">Flashback (Excerpt)</a></li>
+                        <li><a href="https://open.spotify.com/track/6tvpQrBDbIjbzgETc7FJAA?si=711f55765b12444f">Feature Presentation</a></li>
+                        <li><a href="https://open.spotify.com/track/34ov2MLnX3jUhL5QeosFly?si=fe1bb902e66a429c">And Now For Today's Sponsors...!</a></li>
+                        <li><a href="https://open.spotify.com/track/2jGCOh2CyVs6fKWx6Mdqin?si=34d577d2eaf54ac0">MIKE, the BOARD, please!</a></li>
+                        <li><a href="https://open.spotify.com/track/1ibB9qEsHH6LdhZSCxUhtq?si=6f4bad4b3bc74a4a">Sandy Board</a></li>
+                        <li><a href="https://open.spotify.com/track/77AbXWzEwS7xb2y0cQ1vKV?si=b07906b80af24f66">Adventure Board</a></li>
+                        <li><a href="https://open.spotify.com/track/0f3lbqBNjllwLhPpmPqoYH?si=d381bc2fb51347f7">Query?</a></li>
+                        <li><a href="https://open.spotify.com/track/06MqXIRp3PBssVsdgQ2LmO?si=682b5e949f694113">Quiz!</a></li>
+                        <li><a href="https://open.spotify.com/track/7tXOPzioo1bTWpOe9XHcKz?si=53ee177f23004c3e">Dig! Dig! To The Center of the Earth!</a></li>
+                        <li><a href="https://open.spotify.com/track/33tFlu3Zwzk0DuiqpqKvoc?si=11b638bcd6434c88">Pushing Buddies</a></li>
+                        <li><a href="https://open.spotify.com/track/1pzBe2vFkYc7RvieibXO8b?si=df8df3c2818f4e4e">Ruder Buster</a></li>
+                        <li><a href="https://open.spotify.com/track/4zDUTFUluT3ptuXBUhqux5?si=9723198dc3814e38">Physical Challenge</a></li>
+                        <li><a href="https://open.spotify.com/track/4MOXjN5shJCZHjAtOoPTPN?si=d9ff6ce82c354d52">Board Clear!</a></li>
+                        <li><a href="https://open.spotify.com/track/4F9q9vdpzkA2OxuofEXxNf?si=c949f27505e94b97">Welcome to the Green Room</a></li>
+                        <li><a href="https://open.spotify.com/track/53Q6v9ZiLLaw1MMtInfWBs?si=93ec6fe69d7643b8">Vapor Buster</a></li>
+                        <li><a href="https://open.spotify.com/track/59ZD83tA5CVrOT9fZmmTxS?si=c152d87571614fb2">Paradise, Paradise</a></li>
+                        <li><a href="https://open.spotify.com/track/4FjthTLSGFCMv69aEX2yqi?si=998c97a75f0a49b8">Raft Ride</a></li>
+                        <li><a href="https://open.spotify.com/track/126RQ9QDOI9vBdGxrO545m?si=e9f3040b2b1c444b">SOUTH OF THE BORDER!!</a></li>
+                        <li><a href="https://open.spotify.com/track/7mTVgwCZpAi2rxvsPtVAaj?si=d5ac233e10ed4617">Sound Check</a></li>
+                        <li><a href="https://open.spotify.com/track/2yvLgJd9ZcOUwdaPBhsKhn?si=f027396a697b4a87">Raise Up Your Bat</a></li>
+                        <li><a href="https://open.spotify.com/track/4rVYnz4PMR5k3LdGfbe7uW?si=a66a76726591474b">KING OF ROLYPOLY</a></li>
+                        <li><a href="https://open.spotify.com/track/4hBKerIFw7vZ8Wj5RFf992?si=3879b17286364380">Glowing Snow</a></li>
+                        <li><a href="https://open.spotify.com/track/5pRrR8C22MseJx8Z9jMNsW?si=11fd230b2fa24e6e">Big City Board</a></li>
+                        <li><a href="https://open.spotify.com/track/6Esifny7MfmbRssBmqSnyO?si=0a37f6866ab5447b">Doom Board</a></li>
+                        <li><a href="https://open.spotify.com/track/2xmBM0jKHkoTtMB2IXh9Um?si=3de1942792a04438">Metaphysical Challenge</a></li>
+                        <li><a href="https://open.spotify.com/track/4dCf5JiHTFjDyJ3Lso0FPx?si=d693a81c4fbb4637">TV WORLD</a></li>
+                        <li><a href="https://open.spotify.com/track/3O9xF6nqYYtMjkuIutRYLP?si=412a8fcbb2c34dd4">It's TV Time!</a></li>
+                        <li><a href="https://open.spotify.com/track/4PTQoGJKnCMSJHU1JhVLoH?si=2d76591ccfcd4e95">Hall of Fame</a></li>
+                        <li><a href="https://open.spotify.com/track/0IOWy7aABFxHymtVelvRuT?si=5db24e73b16e4173">Breath</a></li>
+                        <li><a href="https://open.spotify.com/track/3TXV0txNTcLXCktESOcMuG?si=0e54025dbf0746ba">Black Knife</a></li>
+                        <li><a href="https://open.spotify.com/track/2LNqzBqxASFVG7UWASevnJ?si=8a1a2d81ff404877">Crickets</a></li>
+                        <li><a href="https://open.spotify.com/track/2LNqzBqxASFVG7UWASevnJ?si=a650fc5abf1f45c8">Dump</a></li>
+                        <li><a href="https://open.spotify.com/track/2FuJAsTPVx9hIZOCdRbMPV?si=ff080045c7e845d1">SWORD</a></li>
+                        <li><a href="https://open.spotify.com/track/70k7l4qtoQkKa7kS2xsEiA?si=c35de68102fc4b56">NORTHERNLIGHT</a></li>
+                        <li><a href="https://open.spotify.com/track/03ukf04MOfpSzDk5EakIiv?si=859071a892a4425e">GLACEIR</a></li>
+                        <li><a href="https://open.spotify.com/track/5HVWxGx8pVxZ5n7H0Stt9K?si=a84d96b8a2d74ae7">BIT ROOTS</a></li>
+                        <li><a href="https://open.spotify.com/track/4T6NeRmGQox3l6YahP6HOp?si=b3d1ee1cb7c24b8a">ERAM</a></li>
+                        <li><a href="https://open.spotify.com/track/5y2A6lAb8c1pYgdomYM2zm?si=54c841be5ac94d5d">BURNING EYES</a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+
+        <div class="col s6 offset-s3 scrollSpy" id="ch4">
+            <div class="card" style="border-radius: 30px; background-image: linear-gradient(to bottom, rgb(4, 4, 76), rgb(83, 7, 102));">
+                <div class="card-content">
+                    <div class="card-title center" style="font-size: 35px; color: rgb(208, 75, 208); text-shadow: 0 0 7px rgb(222, 113, 222);">Chapter 4</div>
+                    <ol style="font-size: 20px; place-items: center; text-shadow: 0 0 5px rgb(27, 34, 236); color: rgb(83, 238, 252);">
+                        <li><a href="https://open.spotify.com/track/0KqDYr4qjE4aQ4MdiYAHSu?si=30aa6e06568746a4">Old wooden rafters</a></li>
+                        <li><a href="https://open.spotify.com/track/0MyDcubBn6rtcYxqKA0k5f?si=0971a3b8f2234ddb">Hymn</a></li>
+                        <li><a href="https://open.spotify.com/track/7ttAYAA9xgN9X2pKgE6D2w?si=12772871a47b4f79">Another day in hometown</a></li>
+                        <li><a href="https://open.spotify.com/track/42gE8OCT3DiFUg6F6heHKL?si=663150c7e5944811">Friends</a></li>
+                        <li><a href="https://open.spotify.com/track/580rGEvaWqalvq6sXo7qcI?si=0ed7bfea53924629">Castle Funk</a></li>
+                        <li><a href="https://open.spotify.com/track/12W8e5qsinrzV6vhqN3wWl?si=47637ce9281b45d8">Knock You Down!! - Rhythm Ver.</a></li>
+                        <li><a href="https://open.spotify.com/track/55JVCXdcI0FpG1XfVK7QH6?si=ae74a60e1bbe4c6d">Gingerbread house</a></li>
+                        <li><a href="https://open.spotify.com/track/6V7mrQd5w1RLYLgpa0j1lh?si=29331b9035e1425b">The distance between two</a></li>
+                        <li><a href="https://open.spotify.com/track/4VYoTPAeHVhBzxhzNy5uGr?si=1b9a86d712b2449e">C</a></li>
+                        <li><a href="https://open.spotify.com/track/34J8FvGXDEittDb6CpV1Qs?si=13878b248885474c">ATRIUM</a></li>
+                        <li><a href="https://open.spotify.com/track/1jfGFGFCJVFswChxzkjdih?si=3371c5a74c6b432c">Dark Sanctuary</a></li>
+                        <li><a href="https://open.spotify.com/track/4Hjl9fN4GFjwumSSwzfnoF?si=e943038bd5d64cff">From Now On (Battle 2)</a></li>
+                        <li><a href="https://open.spotify.com/track/6gecazaYAnbY23qNXXmgb2?si=9951fb91b2aa4975">Gyaa Ha ha!</a></li>
+                        <li><a href="https://open.spotify.com/track/2L5nTpQVL0uAOC3D9EAgOo?si=23f78b29abdd4c61">Fireplace</a></li>
+                        <li><a href="https://open.spotify.com/track/4xWndE8mpwxptsiImg8NML?si=320029fe78374135">A DARK ZONE</a></li>
+                        <li><a href="https://open.spotify.com/track/6ryg7xffWWiM2k3vSaeovv?si=908d557644fa4aea">Mysterious Ringing</a></li>
+                        <li><a href="https://open.spotify.com/track/50vzjXBvI9LqWoH8rS7Ngs?si=973497f245214377">Ever Higher</a></li>
+                        <li><a href="https://open.spotify.com/track/3G8frZE57AjViNcrFSgJVS?si=cc2aaf0f1d554e05">Wise words</a></li>
+                        <li><a href="https://open.spotify.com/track/5dH2YsWmbDhVgFrESQrMDk?si=f84a6237ea9040f5">Piano that may not be played that well</a></li>
+                        <li><a href="https://open.spotify.com/track/5A1CTzfzTz7h4FZo7zxa1A?si=97d47d16f102405b">Hammer of Justice</a></li>
+                        <li><a href="https://open.spotify.com/track/4UKmADVuX37678FmIkWNec?si=79b74d58b39746fe">12am</a></li>
+                        <li><a href="https://open.spotify.com/track/4bmMBMIm6E5QkMcVxl98q9?si=7b779d482fda4d73">The Second Sanctuary</a></li>
+                        <li><a href="https://open.spotify.com/track/1nRbX4Y2INifRgrjXioxz1?si=36cc03b4953f4109">Ripple</a></li>
+                        <li><a href="https://open.spotify.com/track/2j6z4O5sYkXzF73s2fYNMM?si=37c2ff39b0824e09">13am</a></li>
+                        <li><a href="https://open.spotify.com/track/559K8nUEfwvXHHuPBgX2do?si=324790a79aa141ab">The Third Sanctuary</a></li>
+                        <li><a href="https://open.spotify.com/track/2BH3agU3rF9fUAyXHygvvi?si=152d13a641b14e03">Dark Place</a></li>
+                        <li><a href="https://open.spotify.com/track/3P4gWy7Xs7fqmWIIx1wlyU?si=7a2c4a1bc03f4345">Heavy Footsteps</a></li>
+                        <li><a href="https://open.spotify.com/track/7ukURGTlj6dibrYZn5A1Gj?si=421e6119eedf4678">Crumbling Tower</a></li>
+                        <li><a href="https://open.spotify.com/track/2u4ushxdRXhwwZV1ql8FSW?si=b96edb05bcb44cce">SPAWN</a></li>
+                        <li><a href="https://open.spotify.com/track/6KJL2lAVwFQyuZx9UhJvPo?si=4e7bc4b9912c487f">GUARDIAN</a></li>
+                        <li><a href="https://open.spotify.com/track/0TKD1A2DMx30e70scvLZBC?si=0058f974f4024dda">Need a hand!?</a></li>
+                        <li><a href="https://open.spotify.com/track/7dBppsBocHB0AhHbSe1G4L?si=d202f2c031f94696">The place where it rained</a></li>
+                        <li><a href="https://open.spotify.com/track/13OOV33XXDkjmXcF5O4UMZ?si=58f80b3ac6bf4baf">The Ol' Jitterbug</a></li>
+                        <li><a href="https://open.spotify.com/track/3VoY2M955hxgj9i6g3e5Yj?si=b726aad366304ddc">Neverending Night</a></li>
+                        <li><a href="https://open.spotify.com/track/4YKi7DleHSQLhO8dKws454?si=658675e6067c4b30">The LEGEND...?</a></li>
+                        <li><a href="https://open.spotify.com/track/3TIvMJwLPjWkZmdNjO33iU?si=d5eaeac1a9544345">With Hope Crossed On Our Hearts</a></li>
+                        <li><a href="https://open.spotify.com/track/2HzSMVOrr9iIr0nUjIttuN?si=d86d7bdcf22143d3">Volume Adjustment</a></li>
+                        <li><a href="https://open.spotify.com/track/3m5FpGqqw4Lu5jlPUx6YWr?si=1ac2d266355b4b9d">Catswing</a></li>
+                        <li><a href="https://open.spotify.com/track/0M4R2a09Sru58lv4aW8nl0?si=88144eabdd4649d9">Air Waves</a></li>
+                        <li><a href="https://open.spotify.com/track/4yclX1bQYgp7WTMp9XjLh3?si=d9e6a1fe674c4209">Concert for you</a></li>
+                    </ol>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+    <footer style="margin-top: 50px;">
+        <div class="footer-copyright center-align">
+            <img style="margin: 10px;" src="misc/Annoying_Dog_overworld.webp" alt="dog">
+            <div class="center-align black-text">DELTARUNE &copy; Toby Fox 2018-2025. All Rights Reserved.</div>
+        </div>
+    </footer>
+            
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
+            $('materialboxed').materialbox();
+        })
+    </script>
+</body>
+>>>>>>> 216a6bffe98309d31f2535bff48da46d59d01266
 </html>
